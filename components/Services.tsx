@@ -7,7 +7,7 @@ import { TbWorldWww } from "react-icons/tb";
 
 const Services = () => {
   return (
-    <section id="services" className='mt-[8rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center'>
+    <section id="services" className='mb-[10rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center'>
       <h1 className="text-xl md:text-2xl font-medium">Services</h1>
 
       {/* Services */}
@@ -20,7 +20,7 @@ const Services = () => {
         className="w-full bg-gray-900 p-5 rounded-xl shadow-sm shadow-blue-900 bg-gray-900/50 backdrop-filter backdrop-blur-md bg-clip-padding hover:shadow-md transition-all duration-200 flex flex-col items-center justify-center">
           <TbWorldWww className="text-[4rem] text-blue-500" />
           <h2 className="font-medium text-lg text-blue-500 mt-3">Website Dev</h2>
-          <p className="mt-4 text-gray-400 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, corporis deleniti, quisquam earum qui dolorem quidem odit vel</p>
+          <p className="mt-4 text-gray-400 text-center">I create a mordern websites that not just beautiful, but also look responsive for all devices and keep your businness Alive 💡</p>
         </motion.div>
         {/* 02 */}
         <motion.div 
@@ -40,7 +40,7 @@ const Services = () => {
         className="w-full bg-gray-900 p-5 rounded-xl shadow-sm shadow-blue-900 bg-gray-900/50 bacdrop-filter backdrop-blur-md bg-clip-padding hover:shadow-md transition-all duration-200 flex flex-col items-center justify-center">
           <FaPenNib className="text-[4rem] text-blue-500" />
           <h2 className="font-medium text-lg text-blue-500 mt-3">Ui/Ux Design</h2>
-          <p className="mt-4 text-gray-400 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, corporis deleniti, quisquam earum qui dolorem quidem odit vel</p>
+          <p className="mt-4 text-gray-400 text-center">UI intuitive designs for your website or mobile app that look good for user experience</p>
         </motion.div>
       </div>
     </section>

@@ -5,7 +5,7 @@ import Link from "next/link"
 
 const HeroSection = () => {
   return (
-    <main className="w-full mt-[4rem] lg:mt-0 px-8 md:px-12 lg:px-15 flex flex-col md:flex-row items-center justify-between">
+    <main className="mb-[10rem] w-full mt-[4rem] lg:mt-0 px-8 md:px-12 lg:px-15 flex flex-col md:flex-row items-center justify-between">
       <div className="flex flex-col w-full">
         <motion.div 
           initial={{opacity: 0}}

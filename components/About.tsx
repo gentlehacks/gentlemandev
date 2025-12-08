@@ -10,7 +10,7 @@ const About = () => {
       initial={{y: "200px", opacity: 0, scale: 0.9}}
       whileInView={{y: 0, opacity: 1, scale: 1}}
       transition={{duration: 1, ease: "easeInOut"}}
-    className="mt-[10rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center">
+    className="mb-[10rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center">
       <h1 className="font-medium text-xl md:text-2xl text-center">
         <span className="border-b-2 border-blue-500">About</span>{" "} 
         My Journey

@@ -68,7 +68,7 @@ const projects: ProjectProps[] = [
 const Projects = () => {
 
   return (
-    <section id="projects" className=' mt-[8rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center'>
+    <section id="projects" className=' mb-[10rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center'>
       <h1 className="text-xl md:text-2xl font-medium">My Projects</h1>
 
       {/* Projects */}

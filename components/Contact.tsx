@@ -48,7 +48,7 @@ export default function Contact() {
   // };
  
   return (
-    <section id="contact" className="flex flex-col mt-[10rem] w-full items-center justify-center"> 
+    <section id="contact" className="flex flex-col mb-[10rem] w-full items-center justify-center"> 
       <h1 className="text-2xl md:text-3xl font-medium">
         <span className="border-b-2 border-blue-500">Let&apos;s</span>{" "} Connect
       </h1>

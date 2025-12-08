@@ -8,7 +8,7 @@ const Skills = () => {
       initial={{opacity: 0, y: "200px", scale: 0.9}}
       whileInView={{opacity: 1, y: 0, scale: 1}}
       transition={{duration: 1}}
-    className="mt-[10rem] flex flex-col items-center justify-center px-6 sm:px-10 md:px-8 lg:px-12">
+    className="mb-[10rem] flex flex-col items-center justify-center px-6 sm:px-10 md:px-8 lg:px-12">
       <h1 className="text-xl md:text-2xl font-semibold "><span className="border-b-2 border-blue-500">Technical</span> Expertise</h1>
       <p className="text-gray-400 text-md mt-3 max-w-[30rem] text-center">A collection of technologies and methodologies I've mastered through years of hands-on experience</p>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-[5rem] sm:px-12 md:px-0">
