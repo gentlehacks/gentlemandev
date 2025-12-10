@@ -5,7 +5,7 @@ interface ProjectProps {
   id: number;
   name: string;
   image: string;
-  category: "mobile app" | "website";
+  category: "Clinic" | "website";
 }
 
 const projects: ProjectProps[] = [
