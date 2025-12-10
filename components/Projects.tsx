@@ -5,7 +5,7 @@ interface ProjectProps {
   id: number;
   name: string;
   image: string;
-  category: "Clinic" | "website";
+  category: "mobile app" | "website";
 }
 
 const projects: ProjectProps[] = [
@@ -13,7 +13,7 @@ const projects: ProjectProps[] = [
     id: 1,
     name: "Sauki PHC patient record",
     image: "/saukiphc.png",
-    category: "Clinic"
+    category: "website"
   },
   {
     id: 2,
@@ -25,13 +25,13 @@ const projects: ProjectProps[] = [
     id: 3,
     name: "Sauki PHC patient record",
     image: "/saukiphc.png",
-    category: "Clinic"
+    category: "website"
   },
   {
     id: 4,
     name: "Sauki PHC patient record",
     image: "/saukiphc.png",
-    category: "Clinic"
+    category: "website"
   },
   {
     id: 5,
@@ -49,19 +49,19 @@ const projects: ProjectProps[] = [
     id: 7,
     name: "Sauki PHC patient record",
     image: "/saukiphc.png",
-    category: "Clinic"
+    category: "website"
   },
   {
     id: 8,
     name: "Sauki PHC patient record",
     image: "/saukiphc.png",
-    category: "Clinic"
+    category: "website"
   },
   {
     id: 9,
     name: "Sauki PHC patient record",
     image: "/saukiphc.png",
-    category: "Clinic"
+    category: "website"
   }
 ];
 
