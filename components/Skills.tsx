@@ -33,7 +33,7 @@ const Skills = () => {
               id: 3,
               name: "HTML/CSS",
               description: "Semantic markup & modern styling",
-              percentage: "85%",
+              percentage: "95%",
             },
             {
               id: 4,

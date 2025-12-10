@@ -17,29 +17,33 @@ const Footer = () => {
         className="w-[3rem] mt-5"
       />
       {/* Links */}
-      <ul className='gap-5 flex items-center mt-15'>
-        <Link href="#" className="text-blue-400 hover:mt-[-2px] hover:text-gray-300">
+      <div className="mt-20 flex flex-col items-center justify-center w-full">
+        <h3 className="text-lg text-gray-200 font-medium mb-4">Links</h3>
+      <ul className='gap-5 flex items-center'>
+        <Link href="#" className="text-blue-300 hover:mt-[-2px] hover:text-gray-300">
           Home
         </Link>
-        <Link href="#sevices" className="text-blue-400 hover:mt-[-2px] hover:text-gray-300">
+        <Link href="#sevices" className="text-blue-300 hover:mt-[-2px] hover:text-gray-300">
           Services
         </Link>
-        <Link href="#about" className="text-blue-400 hover:mt-[-2px] hover:text-gray-300">
+        <Link href="#about" className="text-blue-300 hover:mt-[-2px] hover:text-gray-300">
           About
         </Link>
-        <Link href="#projects" className="text-blue-400 hover:mt-[-2px] hover:text-gray-300">
+        <Link href="#projects" className="text-blue-300 hover:mt-[-2px] hover:text-gray-300">
           Projects
         </Link>
-        <Link href="#contact" className="text-blue-400 hover:mt-[-2px] hover:text-gray-300">
+        <Link href="#contact" className="text-blue-300 hover:mt-[-2px] hover:text-gray-300">
           Contact
         </Link>
       </ul>
+      </div>
+      
       {/* Socials */}
-      <ul className='mt-12 flex items-center gap-6'>
+      <ul className='mt-20 flex items-center gap-6'>
         <Link href="https://linkedin.com/in/salihu-adamu-3b9b97290" className="p-2 flex items-center justify-center rounded-full border-1 border-blue-400 hover:border-blue-500 hover:text-blue-500 transition-all duration-200 cursor-pointer">
           <FaLinkedin className="text-lg" />
         </Link>
-        <Link href="" className="p-2 flex items-center justify-center rounded-full border-1 border-blue-400 hover:border-blue-500 hover:text-blue-500 transition-all duration-200 cursor-pointer">
+        <Link href="https://instagram.com/gentlemanwebdev" className="p-2 flex items-center justify-center rounded-full border-1 border-blue-400 hover:border-blue-500 hover:text-blue-500 transition-all duration-200 cursor-pointer">
           <FaInstagram className="text-lg" />
         </Link>
         <Link href="https://x.com/gentlemanwebdev" className="p-2 flex items-center justify-center rounded-full border-1 border-blue-400 hover:border-blue-500 hover:text-blue-500 transition-all duration-200 cursor-pointer">
@@ -49,8 +53,8 @@ const Footer = () => {
           <FaGithub className="text-lg" />
         </Link>
       </ul>
-      <div className="flex items-center gap-6 mt-8 border-b-1 border-gray-800 pb-5">
-        <Link href="mailto:salihuadamu4678@gmail.com" className="flex items-center text-gray-300 hover:text-blue-400 transition-all duration-200 text-sm">
+      <div className="flex items-center gap-6 mt-12 border-b-1 border-gray-800 pb-5">
+        <Link href="mailto:salihuadamu4678@gmail.com" className="flex items-center text-gray-300 hover:text-blue-300 transition-all duration-200 text-sm">
           <LuMail className="mr-2 " /> Salihuadamu4678@gmail.com
         </Link>
         <p className="flex items-center text-gray-300 text-sm">

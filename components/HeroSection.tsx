@@ -40,15 +40,15 @@ const HeroSection = () => {
           transition={{duration: 1, delay: 0.5, ease: 'easeInOut'}}
         className="flex w-full md:w-[80%] items-center justify-center gap-10 md:gap-0 lg:gap-10 p-4 rounded-lg mt-15 bg-gray-900">
           <div className="flex flex-col border-r-2 border-gray-800 md:px-4 w-full">
-            <h2 className="font-semibold text-blue-500">3+</h2>
+            <h2 className="font-semibold text-blue-500">2+</h2>
             <p className="text-gray-400 mt-3">Experience</p>
           </div>
           <div className="flex flex-col border-r-2 border-gray-800 md:px-4 w-full">
-            <h2 className="font-semibold text-blue-500">7+</h2>
+            <h2 className="font-semibold text-blue-500">9+</h2>
             <p className="text-gray-400 mt-3">Skills</p>
           </div>
           <div className="flex flex-col md:px-4 w-full">
-            <h2 className="font-semibold text-blue-500">7+</h2>
+            <h2 className="font-semibold text-blue-500">4+</h2>
             <p className="text-gray-400 mt-3">Projects</p>
           </div>
         </motion.div>

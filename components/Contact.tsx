@@ -2,7 +2,6 @@
 import {motion} from "framer-motion"
 import Link from "next/link"
 import { useRef, useState } from 'react';
-import {FaGithub} from "react-icons/fa"
 import { LuMail, LuFacebook, LuInstagram, LuGithub, LuLinkedin } from "react-icons/lu";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -52,7 +51,7 @@ export default function Contact() {
       <h1 className="text-2xl md:text-3xl font-medium">
         <span className="border-b-2 border-blue-500">Let&apos;s</span>{" "} Connect
       </h1>
-      <p className="text-gray-400 text-md text-center mx-w-[30rem] mt-3">Have a project in mind or just want to say hi? I'd love to hear from you!</p>
+      <p className="text-gray-400 text-md text-center mx-w-[30rem] mt-3 px-4">Have a project in mind or just want to say hi? I'd love to hear from you!</p>
       <div className="mt-[5rem] flex items-center justify-between gap-1 p-1 rounded-full border-1 border-gray-800">
         <button onClick={() => setContactType("message")} 
         className={`px-4 py-3 bg-gradient-to-br from-gray-900 to-blue-700 text-sm rounded-full cursor-pointer
@@ -76,17 +75,17 @@ export default function Contact() {
         className="max-w-[35rem] w-[95%] md:w-[75%] gap-6 flex flex-col  mt-[3rem] p-6 bg-gray-900 border-1 border-gray-800 rounded-2xl hover:border-blue-400/50 transition-all duration-200">
         <h2 className="mb-5 text-xl font-semibold">Drop Me a Line</h2>
         <div className="w-full flex flex-col gap-6 items-center md:flex-row">
-          <div>
+          <div className="w-full">
             <label htmlFor="name" className="text-gray-300 font-medium text-sm mb-2">Name</label>
             <input id="name" name="name" type="text" required className="w-full px-3 py-2 border border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 w-full" placeholder="john doe"  />
           </div>
-          <div>
+          <div className="w-full">
             <label htmlFor="email" className="text-gray-300 font-medium text-sm mb-2">Email</label>
             <input id="email" name="email" type="email" required className="w-full px-3 py-2 border border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 w-full" placeholder="john@example.com" />
           </div>
         </div>
   
-        <div className="w-full">
+        <div  className="w-full">
           <label htmlFor="message" className="text-gray-300 font-medium text-sm mb-2">Message</label>
           <textarea id="message" name="message" required rows={4} className="w-full max-h-[350px] h-[150px] px-3 py-2 border border-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 w-full" placeholder="Your message here!" />
         </div>
@@ -156,7 +155,7 @@ export default function Contact() {
           </div>
         </Link>
         {/* Github */}
-        <Link href="https://github.com/gentlehhacks" target="_blank">
+        <Link href="https://github.com/gentlehacks" target="_blank">
           <div className="w-full p-5 rounded-2xl flex flex-col bg-gradient-to-br from-gray-800/20 to-gray-600/20 hover:from-gray-800/40 hover:to-gray-600/40 transition-all duration-200 hover:shadow-lg hover:shadow-gray-500/40 hover:mt-[-6px]">
             <div className="w-12 h-12 flex items-center justify-center bg-gray-800 rounded-xl">
               <LuGithub className="text-[2rem]" />

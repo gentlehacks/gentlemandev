@@ -20,10 +20,10 @@ const Header = () => {
           <Link href="#" className="font-medium text-[12px] md:text-[1rem] hover:text-gray-300 transition-all duration-200 hover:mr-2">
             Home
           </Link>
-          <Link href="#services" className="font-medium text-[12px] md:text-[1rem] hover:text-gray-300 transition-all duration-200 hover:mr-2">
+          <Link href="#services" className="hidden md:block font-medium text-[12px] md:text-[1rem] hover:text-gray-300 transition-all duration-200 hover:mr-2">
             Services
           </Link>
-          <Link href="#about" className="hidden md:block font-medium text-[12px] md:text-[1rem] hover:text-gray-300 transition-all duration-200 hover:mr-2">
+          <Link href="#about" className="font-medium text-[12px] md:text-[1rem] hover:text-gray-300 transition-all duration-200 hover:mr-2">
             <p className="hidden md:block">About me</p>
             <p className="block md:hidden">About</p>
           </Link>

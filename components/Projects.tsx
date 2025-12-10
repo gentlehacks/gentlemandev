@@ -17,9 +17,9 @@ const projects: ProjectProps[] = [
   },
   {
     id: 2,
-    name: "Sauki PHC patient record",
-    image: "/saukiphc.png",
-    category: "Clinic"
+    name: "Weather App",
+    image: "/weather-app.png",
+    category: "Website"
   },
   {
     id: 3,
