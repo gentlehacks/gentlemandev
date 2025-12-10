@@ -19,7 +19,7 @@ const projects: ProjectProps[] = [
     id: 2,
     name: "Weather App",
     image: "/weather-app.png",
-    category: "Website"
+    category: "website"
   },
   {
     id: 3,
