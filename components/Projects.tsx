@@ -1,88 +1,173 @@
 "use client"
+import {motion} from "framer-motion"
 import Project from "./Project" 
+
+interface Technologies {
+  id: number;
+  name: string;
+}
 
 interface ProjectProps {
   id: number;
-  name: string;
   image: string;
-  category: "Clinic" | "website";
+  title: string;
+  description: string;
+  year: number;
+  demoLink: string;
+  status: 'live' | 'active' | 'prototyping' | 'production';
+  technologies: Technologies[];
 }
 
 const projects: ProjectProps[] = [
   {
     id: 1,
-    name: "Sauki PHC patient record",
-    image: "/saukiphc.png",
-    category: "website"
+    image: "/saukiphc.jpg",
+    title: "Sauki phc patients record system",
+    description: "A patient management record system that save and manage patients records for Sauki P.H.C clinic Kawo - kontagora, Niger state Nigeria.",
+    year: 2025,
+    demoLink: "https://saukiphc.vercel.app",
+    status: "active",
+    technologies: [
+      {
+        id: 1,
+        name: "React.js"
+      },
+      {
+        id: 2,
+        name: "TailwindCss"
+      },
+      {
+        id: 3,
+        name: "Next.js"
+      },
+      {
+        id: 4,
+        name: "Typescript"
+      },
+      {
+        id: 5,
+        name: "Supabase"
+      },
+    ]
   },
   {
     id: 2,
-    name: "Weather App",
-    image: "/weather-app.png",
-    category: "website"
+    image: "/weather-app.jpg",
+    title: "Weather Forecating App",
+    description: "A NextJs weather forecasting app for Ibrahim Badamasi Babangida University Lapai, school project.",
+    year: 2025,
+    demoLink: "https://weather-app-ibbu.vercel.app",
+    status: "live",
+    technologies: [
+      {
+        id: 1,
+        name: "React.js"
+      },
+      {
+        id: 2,
+        name: "TailwindCss"
+      },
+      {
+        id: 3,
+        name: "Next.js"
+      },
+      {
+        id: 4,
+        name: "Typescript"
+      },
+    ]
   },
   {
     id: 3,
-    name: "Sauki PHC patient record",
-    image: "/saukiphc.png",
-    category: "website"
+    image: "/psdshub.jpg",
+    title: "Password Generator",
+    description: "A Strong password generator build to generate unique password easily and fast.",
+    year: 2025,
+    demoLink: "https://psdshub.vercel.app",
+    status: "live",
+    technologies: [
+      {
+        id: 1,
+        name: "React.js"
+      },
+      {
+        id: 2,
+        name: "TailwindCss"
+      },
+      {
+        id: 3,
+        name: "Zustand"
+      },
+      {
+        id: 4,
+        name: "Typescript"
+      },
+    ]
   },
   {
     id: 4,
-    name: "Sauki PHC patient record",
-    image: "/saukiphc.png",
-    category: "website"
+    image: "/zexsend.jpg",
+    title: "ZexSend Startup",
+    description: "A startup that focus on gift sharing for friends & love ones, for occassions like birthday, christmas, or eid in Nigeria.",
+    year: 2025,
+    demoLink: "https://zexsend.com",
+    status: "prototyping",
+    technologies: [
+      {
+        id: 1,
+        name: "React.js"
+      },
+      {
+        id: 2,
+        name: "React native"
+      },
+      {
+        id: 3,
+        name: "TailwindCss"
+      },
+      {
+        id: 4,
+        name: "supabase"
+      },
+      {
+        id: 5,
+        name: "Node.js"
+      },
+      {
+        id: 6,
+        name: "Typescript"
+      },
+    ]
   },
-  {
-    id: 5,
-    name: "ZexSend landing page",
-    image: "/zexsend.png",
-    category: "website"
-  },
-  {
-    id: 6,
-    name: "Sauki PHC patient record",
-    image: "/saukiphc.png",
-    category: "website"
-  },
-  {
-    id: 7,
-    name: "Sauki PHC patient record",
-    image: "/saukiphc.png",
-    category: "website"
-  },
-  {
-    id: 8,
-    name: "Sauki PHC patient record",
-    image: "/saukiphc.png",
-    category: "website"
-  },
-  {
-    id: 9,
-    name: "Sauki PHC patient record",
-    image: "/saukiphc.png",
-    category: "website"
-  }
 ];
 
 const Projects = () => {
 
   return (
     <section id="projects" className=' mb-[10rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center'>
-      <h1 className="text-xl md:text-2xl font-medium">My Projects</h1>
+      <h1 className="text-xl md:text-2xl font-medium">Project & Case Studiess</h1>
+      <p className="text-gray-400 mt-3">A showcase of my recent work, from concept to deployment</p>
 
       {/* Projects */}
-      <ul className="mt-[5rem] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <motion.ul 
+        initial={{opacity: 0, y: '100px'}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 1}}
+      className="mt-[5rem] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map(project =>  (
           <Project 
             key={project.id}
             id={project.id}
-            name={project.name}
             image={project.image}
-            category={project.category}
+            title={project.title}
+            description={project.description}
+            year={project.year}
+            demoLink={project.demoLink}
+            status={project.status}
+            technologies={project.technologies}
           />
         ))}
-      </ul>
+      </motion.ul>
     
     </section>
   )

@@ -6,11 +6,7 @@ import { BiDownload } from 'react-icons/bi'
 
 const About = () => {
   return (
-    <motion.section id="about" 
-      initial={{y: "200px", opacity: 0, scale: 0.9}}
-      whileInView={{y: 0, opacity: 1, scale: 1}}
-      transition={{duration: 1}}
-    className="mb-[10rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center">
+    <section id="about" className="mb-[10rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center">
       <h1 className="font-medium text-xl md:text-2xl text-center">
         <span className="border-b-2 border-blue-500">About</span>{" "} 
         My Journey
@@ -19,7 +15,11 @@ const About = () => {
         A passionate full-stack developer crafting digital experiences through innovative solutions
       </p>
 
-      <div className="w-full flex flex-col md:flex-row items-center justify-between mt-[3rem]">
+      <motion.div 
+        initial={{y: "100px", opacity: 0, scale: 0.9}}
+        whileInView={{y: 0, opacity: 1, scale: 1}}
+        transition={{duration: 1}}
+      className="w-full flex flex-col md:flex-row items-center justify-between mt-[3rem]">
         <div className="w-full md:w-[80%]">
           <Image
             src="/profile-2.png"
@@ -45,8 +45,8 @@ const About = () => {
 
           </Link>
         </div>
-      </div>
-    </motion.section>
+      </motion.div>
+    </section>
   )
 }
 
