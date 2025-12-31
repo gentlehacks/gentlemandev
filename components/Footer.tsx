@@ -1,7 +1,6 @@
 "use client"
 import Image from "next/image"
 import Link from 'next/link'
-import { FaGithub } from 'react-icons/fa'
 import { LuGithub, LuLinkedin, LuMail } from 'react-icons/lu';
 import { FaXTwitter } from "react-icons/fa6";
 import { MdKeyboardArrowUp } from "react-icons/md";
@@ -62,7 +61,7 @@ const Footer = () => {
         <p className="sm text-gray-400 ">
           &copy; {new Date().getFullYear()} GentlemanDev made with 💜
         </p>
-        <Link href="#">
+        <Link href="/">
           <button className="flex items-center justify-center text-gray-200 px-3 py-2  border-1 border-blue-50/10 hover:border-blue-500/50 rounded-lg font-medium mt-5 mb-8 transition-all duration-200 cursor-pointer">
             Back to top
             <MdKeyboardArrowUp className="ml-2 text-lg " />

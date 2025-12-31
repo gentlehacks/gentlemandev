@@ -106,6 +106,33 @@ const projects: ProjectProps[] = [
   },
   {
     id: 4,
+    image: "/skihub.jpg",
+    title: "SkiHub",
+    description: "A smart curated learning platform that organized best free resources for tech skills.",
+    year: 2025,
+    demoLink: "https://skihubs.vercel.app",
+    status: "live",
+    technologies: [
+      {
+        id: 1,
+        name: "React.js"
+      },
+      {
+        id: 2,
+        name: "Next.js"
+      },
+      {
+        id: 3,
+        name: "TailwindCss"
+      },
+      {
+        id: 4,
+        name: "Typescript"
+      },
+    ]
+  },
+  {
+    id: 5,
     image: "/zexsend.jpg",
     title: "ZexSend Startup",
     description: "A startup that focus on gift sharing for friends & love ones, for occassions like birthday, christmas, or eid in Nigeria.",
@@ -146,7 +173,7 @@ const Projects = () => {
   return (
     <section id="projects" className=' mb-[10rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center'>
       <h1 className="text-xl md:text-2xl font-medium">Project & Case Studiess</h1>
-      <p className="text-gray-400 mt-3">A showcase of my recent work, from concept to deployment</p>
+      <p className="text-gray-400 text-center mt-3">A showcase of my recent work, from concept to deployment</p>
 
       {/* Projects */}
       <motion.ul 
