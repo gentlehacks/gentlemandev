@@ -8,7 +8,7 @@ import { TbWorldWww } from "react-icons/tb";
 const Services = () => {
   return (
     <section id="services" className='mb-[10rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center'>
-      <h1 className="text-xl md:text-2xl font-medium">Services</h1>
+      <h1 className="text-2xl md:text-3xl font-medium">Services</h1>
 
       {/* Services */}
       <div className="mt-[5rem] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -1,6 +1,6 @@
 "use client"
-import {motion} from "framer-motion"
-import Project from "./Project" 
+import { motion } from "framer-motion"
+import Project from "./Project"
 
 interface Technologies {
   id: number;
@@ -168,10 +168,10 @@ const projects: ProjectProps[] = [
   },
   {
     id: 6,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmiRdSVBX5k3jUVVFxuQsMlI4AybxvdVqUFg&s",
+    image: "/farmlook.jpg",
     title: "FarmLook Ai",
     description: "Agrotech Ai that is Empowering Nigerian Famers with Ai driven diagnostics for a food-secure future. By let farmers snap a crop leaf photo and get instant recommendations.",
-    year: 2025,
+    year: 2026,
     demoLink: "https://farmlook.com.ng",
     status: "production",
     technologies: [
@@ -199,6 +199,10 @@ const projects: ProjectProps[] = [
         id: 6,
         name: "Typescript"
       },
+      {
+        id: 7,
+        name: "Zustand"
+      },
     ]
   },
 ];
@@ -207,17 +211,17 @@ const Projects = () => {
 
   return (
     <section id="projects" className=' mb-[10rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center'>
-      <h1 className="text-xl md:text-2xl font-medium"><span className="border-b-2 border-blue-600">Projects</span> & Case Studiess</h1>
+      <h1 className="text-2xl md:text-3xl font-medium"><span className="border-b-2 border-blue-500">Projects</span> & Case Studies</h1>
       <p className="text-gray-400 text-center mt-3">A showcase of my recent work, from concept to deployment</p>
 
       {/* Projects */}
-      <motion.ul 
-        initial={{opacity: 0, y: '100px'}}
-        whileInView={{opacity: 1, y: 0}}
-        transition={{duration: 1}}
-      className="mt-[5rem] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map(project =>  (
-          <Project 
+      <motion.ul
+        initial={{ opacity: 0, y: '100px' }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="mt-[5rem] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map(project => (
+          <Project
             key={project.id}
             id={project.id}
             image={project.image}
@@ -230,7 +234,7 @@ const Projects = () => {
           />
         ))}
       </motion.ul>
-    
+
     </section>
   )
 }

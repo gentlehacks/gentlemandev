@@ -16,8 +16,9 @@ interface SkillCardProps {
 const SkillsCard = ({title, description, data}: SkillCardProps) => {
   return (
     <motion.div 
-      whileTap={{scale: 1.1}}
-      transition={{duration: 0.2, ease: 'easeInOut'}}
+      initial={{opacity: 0, y: "50px", scale: 0.9}}
+      whileInView={{opacity: 1, y: 0, scale: 1}}
+      transition={{duration: 1}}
     className="relative w-full border-[0.5px] border-gray-900 rounded-3xl p-6 bg-blue-400/10 bg-clip-padding backdrop-filter backdrop-blur-sm shadow-md shadow-blue-400/10 hover:scale-[1.05] transition-all duration-200">
       <h1 className="font-bold text-xl text-blue-600">
         {title}

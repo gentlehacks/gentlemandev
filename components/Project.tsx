@@ -34,12 +34,12 @@ const Project = (
 
   return (
     <div className="w-[100%] block rounded-xl overflow-hidden p-1 border-1 border-gray-700 hover:border-blue-400 relative transiton-all duration-200">
-      <div className="w-full h-50 overflow-hidden rounded-t-xl">
+      <div className="w-full h-65 overflow-hidden rounded-t-xl">
         <Image 
           src={image}
           alt={title}
-          width={300}
-          height={300}
+          width={400}
+          height={400}
           priority
           className="w-full  hover:scale-[1.1] transition-all duration-200 ease-in-out"
         />

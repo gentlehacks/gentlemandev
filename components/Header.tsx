@@ -4,8 +4,8 @@ import Link from "next/link"
 
 const Header = () => {
   return (
-    <header className="w-full mt-4 flex items-center justify-center px-4">
-      <ul className="bg-gray-900 text-gray-100 w-full px-6 md:px-8 py-3 rounded-full flex items-center justify-between">
+    <header className="sticky top-2 md:top-4 z-200 w-full mt-4 flex items-center justify-center px-4">
+      <ul className="bg-gray-900 border-1 border-blue-500/30 text-gray-100 w-full px-4 py-4 md:py-3 rounded-full flex items-center justify-between">
         <li className="hidden lg:flex">
           <Image 
             src="/favicon.png"
