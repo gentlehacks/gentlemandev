@@ -3,3 +3,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+.custom-gradient {
+  background-color: #111827; /* Fallback */
+background: -webkit-linear-gradient(top left, #111827, #1d4ed8); /* Older Safari/Chrome */
+background: linear-gradient(to bottom right, #111827, #1d4ed8);
+}

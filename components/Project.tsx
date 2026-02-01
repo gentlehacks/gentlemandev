@@ -1,4 +1,5 @@
 "use client"
+import {motion} from "framer-motion";
 import Image from "next/image"
 import Link from "next/link"
 import { CiCalendarDate } from "react-icons/ci";
@@ -57,9 +58,13 @@ const Project = (
         </p>
         <div className="mt-4 flex grid grid-cols-3 w-fit gap-3">
           {technologies.map(tech => (
-            <div key={tech.id} className="p-1 px-2 w-fit bg-blue-500/10 rounded-full">
+            <motion.div key={tech.id} className="p-1 px-2 w-fit bg-blue-500/10 rounded-full" 
+              initial={{opacity: 0, scale: 0.8}}
+              whileInView={{opacity: 1, scale: 1}}
+              transition={{duration: 0.5, delay: tech.id * 0.1, stiffness: 100}}
+            >
               <p className="font-medium text-blue-600 text-xs">{tech.name}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
         <div className="w-full flex justify-between mt-6">

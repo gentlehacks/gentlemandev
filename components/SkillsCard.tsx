@@ -19,8 +19,8 @@ const SkillsCard = ({title, description, data}: SkillCardProps) => {
       initial={{opacity: 0, y: "50px", scale: 0.9}}
       whileInView={{opacity: 1, y: 0, scale: 1}}
       transition={{duration: 1}}
-    className="relative w-full border-[0.5px] border-gray-900 rounded-3xl p-6 bg-blue-400/10 bg-clip-padding backdrop-filter backdrop-blur-sm shadow-md shadow-blue-400/10 hover:scale-[1.05] transition-all duration-200">
-      <h1 className="font-bold text-xl text-blue-600">
+    className="relative w-full border-[0.5px] border-blue-900 hover:border-blue-600 rounded-3xl p-6 bg-blue-400/10 bg-clip-padding backdrop-filter backdrop-blur-sm shadow-md shadow-blue-400/10  transition-all duration-200">
+      <h1 className="font-bold text-xl text-blue-500">
         {title}
       </h1>
       <p className="text-gray-400 mt-3">
@@ -46,7 +46,7 @@ const SkillsCard = ({title, description, data}: SkillCardProps) => {
             animate={{backgroundColor: "rgba(54, 54, 54, 0.7)"}}
             transition={{duration: 2, repeat: Infinity, repeatType: 'mirror'}}
           className="relative w-full h-2 bg-gray-800 rounded-full mt-4">
-            <div className={`absolute left-0 top-0 h-2 bg-blue-500 rounded-full `} style={{width: skill.percentage}}
+            <motion.div className={`absolute left-0 top-0 h-2 bg-blue-500 rounded-full `} initial={{width: "0%"}} whileInView={{width: skill.percentage}} transition={{duration: 1.5,  ease: "easeOut"}}
             />
           </motion.div>
           <p className="mt-3 text-sm text-gray-400">

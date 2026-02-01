@@ -15,6 +15,17 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "GentlemanDev | Portfolio",
   description: "Salihu Adamu portfolio website | A software developer",
+  keywords: [
+    "GentlemanDev",
+    "Salihu Adamu",
+    "Software Developer",
+    "Tech Enthusiast",
+    "Nigerian Developer",
+    "Nigerian Software Engineer",
+    "Nigerian Founder",
+    "Founder of ZexSend",
+    "NFigerian Software Engineer",
+  ],
   icons: {
     icon: "/favicon.png"
   }

@@ -56,13 +56,13 @@ export default function Contact() {
       <div className="mt-[5rem] flex items-center justify-between gap-1 p-1 rounded-full border-1 border-gray-800">
         <button onClick={() => setContactType("message")} 
         className={`px-4 py-3 bg-gradient-to-br from-gray-900 to-blue-700 text-sm rounded-full cursor-pointer
-          ${contactType === 'online' ? 'bg-none' : ''}
+          ${contactType === 'online' ? 'bg-none' : 'custom-gradient'}
         `}>
           Send a Message
         </button>
         <button onClick={() => setContactType("online")} 
         className={`px-4 py-3 bg-gradient-to-br from-gray-900 to-blue-700 text-sm rounded-full cursor-pointer
-          ${contactType === 'message' ? 'bg-none' : ''}
+          ${contactType === 'message' ? 'bg-none' : 'custom-gradient'}
         `}>
           Find Me online
         </button>
