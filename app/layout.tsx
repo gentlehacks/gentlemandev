@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     { name: 'Salihu Adamu', url: 'https://gentlemandev.vercel.app' }
   ],
   creator: 'Salihu Adamu',
-  publisher: 'GentlemanDev"
+  publisher: 'GentlemanDev',
 };
 
 export default function RootLayout({
