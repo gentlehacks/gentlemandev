@@ -18,6 +18,7 @@ const SkillsCard = ({title, description, data}: SkillCardProps) => {
     <motion.div 
       initial={{opacity: 0, y: "50px", scale: 0.9}}
       whileInView={{opacity: 1, y: 0, scale: 1}}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{duration: 1}}
     className="relative w-full border-[0.5px] border-blue-900 hover:border-blue-600 rounded-3xl p-6 bg-blue-400/10 bg-clip-padding backdrop-filter backdrop-blur-sm shadow-md shadow-blue-400/10  transition-all duration-200">
       <h1 className="font-bold text-xl text-blue-500">

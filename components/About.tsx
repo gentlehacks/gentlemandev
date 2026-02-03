@@ -7,7 +7,7 @@ import { BiDownload } from 'react-icons/bi'
 const About = () => {
   return (
     <section id="about" className="mb-[10rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center">
-      <h1 className="font-medium text-xl md:text-2xl text-center">
+      <h1 className="text-2xl md:text-3xl font-medium text-center">
         <span className="border-b-2 border-blue-500">About</span>{" "} 
         My Journey
       </h1>

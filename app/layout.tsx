@@ -24,11 +24,23 @@ export const metadata: Metadata = {
     "Nigerian Software Engineer",
     "Nigerian Founder",
     "Founder of ZexSend",
-    "NFigerian Software Engineer",
+    "Salihu Adamu Portfolio",
+    "Salihu Adamu Portfolio Website",
+    "Salihu Adamu Software Developer",
+    "Salihu Adamu Software Engineer",
+    "Salihu Adamu Nupe",
+    "FarmLook founder",
+    "FarmLook founder Salihu Adamu",
+    "Zexsend founder"
   ],
   icons: {
     icon: "/favicon.png"
-  }
+  },
+  authors: [
+    { name: 'Salihu Adamu', url: 'https://gentlemandev.vercel.app' }
+  ],
+  creator: 'Salihu Adamu',
+  publisher: 'GentlemanDev"
 };
 
 export default function RootLayout({
