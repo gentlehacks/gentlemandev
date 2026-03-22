@@ -54,7 +54,7 @@ export default function Contact() {
       </p>
       <motion.div initial={{ width: 0 }} whileInView={{ width: 105 }} transition={{ duration: 0.8 }} className="h-2 bg-blue-600 rounded-full mt-6" />
 
-      <div className="mt-[8rem] flex flex-col md:flex-row justify-between w-full px-8 md:px-12 lg:px-22 gap-12">
+      <div className="mt-[8rem] flex flex-col md:flex-row justify-between w-full px-4 md:px-12 lg:px-22 gap-12">
         <div className="flex flex-col gap-8 w-full">
           <div className="flex flex-col md:flex-row gap-8 w-full">
             <Link href="mailto:salihuadamu4678@gmail.com" className="flex flex-col items-center justify-center p-8 bg-gray-800 w-full rounded-2xl border border-gray-700/50 shadow-lg hadow-gray-800/50 hover:shadow-gray-700/30 hover:mt-[-0.5rem] transition-all duration-200">
