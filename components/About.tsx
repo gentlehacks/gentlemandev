@@ -61,7 +61,7 @@ const skills: Skill[] = [
   },
   {
     id: 9,
-    image: "expressjs.png",
+    image: "expressjs.webp",
     name: "ExpressJs"
   },
   {
@@ -107,7 +107,7 @@ const About = () => {
   };
 
   return (
-    <section className="w-full p-8 md:p-15 flex flex-col lg:flex-row justify-between gap-8 bg-gray-800 border border-gray-700/50 rounded-3xl mb-[10rem]">
+    <section id="about" className="w-full p-8 md:p-15 flex flex-col lg:flex-row justify-between gap-8 bg-gray-800 border border-gray-700/50 rounded-3xl mb-[10rem]">
       <div className="w-full lg:w-[50%]">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600">About Me</h1>
         <motion.div initial={{ width: 0 }} whileInView={{ width: 150 }} transition={{ duration: 0.8 }} className="h-2 bg-blue-600 rounded-full mt-3" />

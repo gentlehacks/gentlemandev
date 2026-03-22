@@ -44,7 +44,7 @@ const tools: Tool[] = [
   },
   {
     id: 9,
-    image: "expressjs.png"
+    image: "expressjs.webp"
   },
   {
     id: 10,
@@ -52,7 +52,7 @@ const tools: Tool[] = [
   },
   {
     id: 11,
-    image: "zustand.jfif"
+    image: "zustand.svg"
   },
   {
     id: 12,

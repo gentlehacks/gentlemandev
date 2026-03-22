@@ -78,19 +78,19 @@ export default function Contact() {
                 <LuLink size={22} className="text-blue-500" />
               </div>
 
-              <h2 className="font-medium text-md md:text-lg ml-2">Follow Me</h2>
+              <h2 className="font-medium text-md md:text-lg ml-2">Follow Me:</h2>
             </div>
-            <div className="flex items-center gap-4">
-              <Link target="_blank" rel="noopener noreferrer" href="github.com/gentlehacks" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-black transition-all duration-200">
+            <div className="flex items-center gap-3 md:gap-4">
+              <Link target="_blank" rel="noopener noreferrer" href="https://github.com/gentlehacks" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-black transition-all duration-200">
                 <LuGithub size={20} />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="github.com/salihu-adamu-9" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-500 transition-all duration-200">
+              <Link target="_blank" rel="noopener noreferrer" href="https://github.com/salihu-adamu-9" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-500 transition-all duration-200">
                 <LuLinkedin size={20} />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="github.com/gentlemanwebdev" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-500 transition-all duration-200">
+              <Link target="_blank" rel="noopener noreferrer" href="https://github.com/gentlemanwebdev" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-500 transition-all duration-200">
                 <LuTwitter size={20} />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="github.com/gentlemandev" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-500 transition-all duration-200">
+              <Link target="_blank" rel="noopener noreferrer" href="https://tiktok.com/gentlemandev" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-500 transition-all duration-200">
                 <FaTiktok size={20} />
               </Link>
             </div>
@@ -101,7 +101,8 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="w-full gap-6 flex flex-col p-8 bg-gray-800/80 backdrop-filter backdrop-blur-md border-1 border-gray-700/50 rounded-3xl hover:border-blue-400/20 transition-all duration-200">
-          <h2 className="mb-5 text-xl font-semibold text-gray-100">Drop Me a Line</h2>
+          <h2 className=" text-xl font-semibold text-gray-100">Drop Me a Line</h2>
+          <motion.div initial={{ width: 0 }} whileInView={{ width: 80 }} transition={{ duration: 0.8 }} className="h-1 bg-blue-600 rounded-full  mb-5" />
           <div className="w-full flex flex-col gap-6 items-center">
             <div className="w-full flex flex-col">
               <label htmlFor="name" className="text-gray-300 font-medium text-sm mb-2">Name</label>

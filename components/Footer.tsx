@@ -49,18 +49,18 @@ const Footer = () => {
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 text-md mt-2">About</Link>
-            <Link href="#about" className="text-gray-400 hover:text-blue-500/80 hover:ml-3 transition-all duration-200 
+            <Link href="#projects" className="text-gray-400 hover:text-blue-500/80 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 text-md mt-2">Projects</Link>
             <Link href="#about" className="text-gray-400 hover:text-blue-500/80 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
-hover:ml-3 transition-all duration-200 text-md mt-2">skills</Link>
-            <Link href="#about" className="text-gray-400 hover:text-blue-500/80 hover:ml-3 transition-all duration-200 
+hover:ml-3 transition-all duration-200 text-md mt-2">Skills</Link>
+            <Link href="#contact" className="text-gray-400 hover:text-blue-500/80 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
-hover:ml-3 transition-all duration-200 text-md mt-2">contact</Link>
+hover:ml-3 transition-all duration-200 text-md mt-2">Contact</Link>
           </div>
           <div className="flex flex-col mt-6 md:mt-0">
             <h2 className="font-semibold text-lg mb-2">Services</h2>
@@ -86,26 +86,27 @@ hover:ml-3 transition-all duration-200 text-md mt-2">UI/UX Design</Link>
         <Link href="/">
           <motion.button
             initial={{ boxShadow: "0px 0px 0px rgba(0,0,0,0)" }}
-           animate={{boxShadow: [
-          '0px 0px 10px rgba(0, 0, 255, 0.8)', // Blue
-          '0px 0px 10px rgba(255, 0, 0, 0.8)', // Red
-          '0px 0px 10px rgba(0, 255, 0, 0.8)', // Green
-          '0px 0px 10px rgba(0, 0, 255, 0.8)'  // Back to Blue for seamless loop
-          ] 
-  }}
-          transition={{
-            duration: 3,        // Total time for one full cycle (1s per color)
-            repeat: Infinity,   // Keeps it looping forever
-            ease: "linear"      // Smooth constant transition
-          }}
-          className="flex items-center justify-center text-gray-200 px-4 py-2 border border-gray-700/80 hover:border-blue-400/40 hover:bg-gray-700/20 backdrop-filter backdrop-blur-md rounded-xl font-medium mt-8 mb-4 transition-all duration-200 cursor-pointer"
+            animate={{
+              boxShadow: [
+                '0px 0px 10px rgba(0, 0, 255, 0.8)', // Blue
+                '0px 0px 10px rgba(255, 0, 0, 0.8)', // Red
+                '0px 0px 10px rgba(0, 255, 0, 0.8)', // Green
+                '0px 0px 10px rgba(0, 0, 255, 0.8)'  // Back to Blue for seamless loop
+              ]
+            }}
+            transition={{
+              duration: 3,        // Total time for one full cycle (1s per color)
+              repeat: Infinity,   // Keeps it looping forever
+              ease: "linear"      // Smooth constant transition
+            }}
+            className="flex items-center justify-center text-gray-200 px-4 py-2 border border-gray-700/80 hover:border-blue-400/40 hover:bg-gray-700/20 backdrop-filter backdrop-blur-md rounded-xl font-medium mt-8 mb-4 transition-all duration-200 cursor-pointer"
           >
-          Back to top
-          <MdKeyboardArrowUp className="ml-2 text-lg " />
-        </motion.button>
+            Back to top
+            <MdKeyboardArrowUp className="ml-2 text-lg " />
+          </motion.button>
 
-      </Link>
-    </div>
+        </Link>
+      </div>
     </footer >
   )
 }
