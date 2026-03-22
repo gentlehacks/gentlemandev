@@ -1,5 +1,5 @@
 "use client"
-import {motion} from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image"
 import Link from "next/link"
 import { CiCalendarDate } from "react-icons/ci";
@@ -23,66 +23,74 @@ interface Project {
 
 const Project = (
   {
-    id, 
-    image, 
-    title, 
-    description, 
-    year, 
-    demoLink, 
-    status, 
+    id,
+    image,
+    title,
+    description,
+    year,
+    demoLink,
+    status,
     technologies
   }: Project) => {
 
   return (
-    <div className="w-[100%] block rounded-xl overflow-hidden p-1 border-1 border-gray-700 hover:border-blue-400 relative transiton-all duration-200">
-      <div className="w-full h-65 overflow-hidden rounded-t-xl">
-        <Image 
-          src={image}
-          alt={title}
-          width={400}
-          height={400}
-          priority
-          className="w-full  hover:scale-[1.1] transition-all duration-200 ease-in-out"
-        />
-      </div>
-      <div className="w-full flex flex-col mt-5 p-4">
-        <div className=" w-full flex items-center justify-between">
-          <h1 className="font-semibold text-lg text-gray-100">{title}</h1>
-          <div className="p-1 bg-gray-800 rounded-full flex items-center justify-center">
-            <CiCalendarDate className="mr-1 text-sm" />
-            <p className="text-xs">{year}</p>
+    <AnimatePresence>
+      <motion.div
+        initial={{ y: 0, opacity: 0, scale: 0.9 }}
+        whileInView={{ y: 50, opacity: 1, scale: 1 }}
+        exit={{ y: 50, opacity: 0, scale: 0.9 }}
+        viewport={{margin: '50%'}}
+        transition={{ duration: 0.4 }}
+        className="w-[100%] block rounded-3xl overflow-hidden p-1 border-1 border-gray-700/50 shadow-lg hover:shadow-5xl hover:border-blue-400/40 bg-gray-800/20 backdrop-filter backdrop-blur-md relative transiton-all duration-200">
+        <div className="w-full h-65 overflow-hidden rounded-t-[1.3rem]">
+          <Image
+            src={image}
+            alt={title}
+            width={400}
+            height={400}
+            priority
+            className="w-full  hover:scale-[1.1] transition-all duration-200 ease-in-out"
+          />
+        </div>
+        <div className="w-full flex flex-col mt-5 p-4">
+          <div className=" w-full flex items-center justify-between">
+            <h1 className="font-semibold text-lg text-gray-100">{title}</h1>
+            <div className="p-1 bg-gray-800 rounded-full flex items-center justify-center">
+              <CiCalendarDate className="mr-1 text-sm" />
+              <p className="text-xs">{year}</p>
+            </div>
+          </div>
+          <p className="mt-3 text-gray-400 text-sm md:text-md  leading-[1.9]">
+            {description}
+          </p>
+          <div className="mt-4 flex flex-nowrap w-[80%] gap-3">
+            {technologies.map(tech => (
+              <motion.div key={tech.id} className="p-1 px-2 w-fit h-fit bg-blue-500/10 rounded-full"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: tech.id * 0.1, stiffness: 100 }}
+              >
+                <p className="font-medium text-blue-600 text-xs">{tech.name}</p>
+              </motion.div>
+            ))}
+          </div>
+          <div className="w-full flex justify-between mt-6">
+            <Link href={demoLink} target="_blank">
+              <button className="px-4 py-2 flex items-center justify-center rounded-lg bg-blue-600 hover:bg-blue-700 transition-all duration-200">
+                <LuExternalLink className="text-sm mr-2" />
+                <h3 className="font-medium text-sm">Live Demo</h3>
+              </button>
+            </Link>
+            <div className="flex items-center">
+              <div className={`mr-2 w-2 h-2 rounded-full animate-pulse bg-green-500 `} />
+              <p className="text-gray-400 text-sm">
+                {status}
+              </p>
+            </div>
           </div>
         </div>
-        <p className="mt-3 text-gray-400 text-sm">
-          {description}
-        </p>
-        <div className="mt-4 flex grid grid-cols-3 w-fit gap-3">
-          {technologies.map(tech => (
-            <motion.div key={tech.id} className="p-1 px-2 w-fit bg-blue-500/10 rounded-full" 
-              initial={{opacity: 0, scale: 0.8}}
-              whileInView={{opacity: 1, scale: 1}}
-              transition={{duration: 0.5, delay: tech.id * 0.1, stiffness: 100}}
-            >
-              <p className="font-medium text-blue-600 text-xs">{tech.name}</p>
-            </motion.div>
-          ))}
-        </div>
-        <div className="w-full flex justify-between mt-6">
-          <Link href={demoLink} target="_blank">
-            <button className="px-4 py-2 flex items-center justify-center rounded-lg bg-blue-600 hover:bg-blue-700 transition-all duration-200">
-              <LuExternalLink className="text-sm mr-2" />
-              <h3 className="font-medium text-sm">Live Demo</h3>
-            </button>
-          </Link>
-          <div className="flex items-center">
-            <div className={`mr-2 w-2 h-2 rounded-full animate-pulse bg-green-500 `} /> 
-            <p className="text-gray-400 text-sm">
-              {status}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+      </motion.div>
+    </AnimatePresence>
   )
 }
 

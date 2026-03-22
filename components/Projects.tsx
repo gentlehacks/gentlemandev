@@ -211,8 +211,11 @@ const Projects = () => {
 
   return (
     <section id="projects" className=' mb-[10rem] px-8 md:px-12 lg:px-15 flex flex-col items-center justify-center'>
-      <h1 className="text-2xl md:text-3xl font-medium"><span className="border-b-2 border-blue-500">Projects</span> & Case Studies</h1>
-      <p className="text-gray-400 text-center mt-3">A showcase of my recent work, from concept to deployment</p>
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600">My Projects</h1>
+      <p className="text-gray-400 text-center mt-6 px-6 max-w-[40rem] text-md md:text-lg font-medium">
+        Dive into my portfolio to see some of the websites and applications I&apos;ve crafted. Each project reflects my passion for clean design, responsive development, and innovative solutions.
+      </p>
+      <motion.div initial={{width: 0}} whileInView={{width: 105}} transition={{duration: 0.5}} className="h-2 bg-blue-600 rounded-full mt-6" />
 
       {/* Projects */}
       <motion.ul
