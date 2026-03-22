@@ -15,7 +15,7 @@ const Header = ({ showMobileMenu, setShowMobileMenu }: { showMobileMenu: boolean
 
   return (
     <header className="sticky top-2 md:top-4 z-200 w-full mt-4 flex items-center justify-center px-4">
-      <ul className="w-[90%] md:w-[85%] lg:w-[92%] xl:w-[85%] bg-gray-800/40 backdrop-filter backdrop-blur-md shadow-3xl border-1 border-gray-700/40 text-gray-100 w-full px-4 md:px-6 py-4 md:py-5 rounded-full flex items-center justify-between">
+      <ul className="w-[90%] md:w-[85%] lg:w-[92%] xl:w-[85%] bg-gray-800/40 backdrop-filter backdrop-blur-md shadow-xl shadow-gray-800/30 border-1 border-gray-700/40 text-gray-100 w-full px-4 md:px-6 py-4 md:py-5 rounded-full flex items-center justify-between">
         <li className="flex items-center">
           <Image
             src="/favicon.png"

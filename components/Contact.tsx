@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import { useRef, useState } from 'react';
 import { LuMail, LuGithub, LuLinkedin, LuSend, LuLink, LuTwitter } from "react-icons/lu";
-import { FaTiktok } from "react-icons/fa6";
+import { FaTiktok, FaWhatsapp } from "react-icons/fa6";
 
 
 
@@ -57,28 +57,28 @@ export default function Contact() {
       <div className="mt-[8rem] flex flex-col md:flex-row justify-between w-full px-4 md:px-12 lg:px-22 gap-12">
         <div className="flex flex-col gap-8 w-full">
           <div className="flex flex-col md:flex-row gap-8 w-full">
-            <Link href="mailto:salihuadamu4678@gmail.com" className="flex flex-col items-center justify-center p-8 bg-gray-800 w-full rounded-2xl border border-gray-700/50 shadow-lg hadow-gray-800/50 hover:shadow-gray-700/30 hover:mt-[-0.5rem] transition-all duration-200">
+            <Link href="mailto:salihuadamu4678@gmail.com" className="flex flex-col items-center justify-center p-8 bg-gray-800 w-full rounded-2xl border border-gray-700/50 shadow-lg shadow-gray-800/50 hover:shadow-gray-700/30 hover:mt-[-0.5rem] transition-all duration-200">
               <div className="w-[3rem] h-[3rem] flex items-center justify-center rounded-full bg-gray-700">
                 <LuMail size={25} className="text-blue-600" />
               </div>
               <h3 className="text-gray-100 font-medium text-[1.2rem] mt-4">Email</h3>
               <p className="font-medium text-md text-gray-300 mt-3">salihuadamu4678@gmail.com</p>
             </Link>
-            <Link target="_blank" rel="noopener noreferrer" href="mailto:salihuadamu4678@gmail.com" className="flex flex-col items-center justify-center p-8 bg-gray-800 w-full rounded-2xl border border-gray-700/50 shadow-lg hadow-gray-800/50 hover:shadow-gray-700/30 hover:mt-[-0.5rem] transition-all duration-200">
+            <Link target="_blank" rel="noopener noreferrer" href="https://wa.me/message/Q47NMIZFTT72M1" className="flex flex-col items-center justify-center p-8 bg-gray-800 w-full rounded-2xl border border-gray-700/50 shadow-lg shadow-gray-800/50 hover:shadow-gray-700/30 hover:mt-[-0.5rem] transition-all duration-200">
               <div className="w-[3rem] h-[3rem] flex items-center justify-center rounded-full bg-gray-700">
-                <LuMail size={25} className="text-blue-600" />
+                <FaWhatsapp size={25} className="text-blue-600" />
               </div>
-              <h3 className="text-gray-100 font-medium text-[1.2rem] mt-4">Email</h3>
-              <p className="font-medium text-md text-gray-300 mt-3">salihuadamu4678@gmail.com</p>
+              <h3 className="text-gray-100 font-medium text-[1.2rem] mt-4">WhatsApp</h3>
+              <p className="font-medium text-md text-gray-300 text-center mt-3">{"https://wa.me/message/Q47NMIZFTT72M1"}</p>
             </Link>
           </div>
-          <div className="w-full flex  items-center justify-between p-8 bg-gray-800 rounded-2xl border border-gray-700/50 shadow-lg hadow-gray-800/50 hover:shadow-gray-700/30  transition-all duration-200">
+          <div className="w-full flex  items-center justify-between px-5 py-8 md:px-8 bg-gray-800 rounded-2xl border border-gray-700/50 shadow-lg shadow-gray-800/50 hover:shadow-gray-700/30  transition-all duration-200">
             <div className="flex items-center">
               <div className="w-[3rem] h-[3rem] flex items-center justify-center rounded-full bg-gray-700 border border-gray-600/50">
                 <LuLink size={22} className="text-blue-500" />
               </div>
 
-              <h2 className="font-medium text-lg ml-2">Follow Me</h2>
+              <h2 className="font-medium text-md md:text-lg ml-2">Follow Me</h2>
             </div>
             <div className="flex items-center gap-4">
               <Link target="_blank" rel="noopener noreferrer" href="github.com/gentlehacks" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-black transition-all duration-200">
