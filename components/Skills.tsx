@@ -4,7 +4,7 @@ import SkillsCard from "./SkillsCard"
 const Skills = () => {
   return (
     <section id="skills" 
-    className="mb-[10rem] flex flex-col items-center justify-center px-6 sm:px-10 md:px-8 lg:px-12">
+    className="mb-[10rem] flex flex-col items-center justify-center sm:px-8 md:px-8 lg:px-12">
       <h1 className="text-2xl md:text-3xl font-semibold "><span className="border-b-2 border-blue-500">Technical</span> Expertise</h1>
       <p className="text-gray-400 text-md mt-3 max-w-[30rem] text-center">A collection of technologies and methodologies I've mastered through years of hands-on experience</p>
       <div 
