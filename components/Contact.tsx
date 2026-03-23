@@ -5,8 +5,6 @@ import { useRef, useState } from 'react';
 import { LuMail, LuGithub, LuLinkedin, LuSend, LuLink, LuTwitter } from "react-icons/lu";
 import { FaTiktok, FaWhatsapp } from "react-icons/fa6";
 
-
-
 export default function Contact() {
   const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<{
@@ -95,6 +93,10 @@ export default function Contact() {
               </Link>
             </div>
           </div>
+          <div className="p-2 rounded-3xl border border-gray-600/30 hover:border-blue-400/40 transition-all duration-200 bg-gray-700/60 backdrop-filter backdrop-blur-md">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15104.057740595232!2d5.465893561502538!3d10.401072384779885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1774250114786!5m2!1sen!2sng" width="400" height="350" style={{border:0, width: '100%'}} className="rounded-2xl" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          
         </div>
         <motion.form ref={formRef}
           initial={{ opacity: 0, y: "100px" }}
