@@ -129,7 +129,7 @@ export default function Contact() {
                 name="message"
                 required
                 rows={4}
-                className="w-full min-h-[100px] max-h-[350px] h-[200px] px-3 py-2 text-lg border border-gray-800/80 rounded-xl bg-[#101720] focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 w-full" placeholder="Tell me about your project, ideas, or your message..." />
+                className="w-full min-h-[100px] max-h-[350px] h-[200px] px-6 py-4 text-lg border border-gray-800/80 rounded-xl bg-[#101720] focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 w-full" placeholder="Tell me about your project, ideas, or your message..." />
             </div>
           </div>
 
