@@ -176,7 +176,7 @@ const About = () => {
           animate={{ opacity: 1,}}
           exit={{ opacity: 0, }}
           transition={{ duration: 0.2, ease: "easeInOut" }}
-          className="h-fit min-h-160 w-full md:w-[70%] lg:w-[42%] mt-12 md:mt-0 p-2 rounded-2xl overflow-hidden flex items-center justify-center bg-gray-700/20 backdrop-filter backdrop-blur-md border border-gray-700">
+          className="h-fit min-h-120 md:min-h-160 lg:min-h-150 xl:min-h-180 w-full md:w-[70%] lg:w-[42%] mt-12 md:mt-0 p-2 rounded-2xl overflow-hidden flex items-center justify-center bg-gray-700/20 backdrop-filter backdrop-blur-md border border-gray-700">
           <div className="overflow-hidden  rounded-xl">
             <Image
               alt="GentleManDev Image"
