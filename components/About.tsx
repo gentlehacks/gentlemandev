@@ -71,7 +71,7 @@ const skills: Skill[] = [
   },
   {
     id: 11,
-    image: "zustand.jfif",
+    image: "zustand.svg",
     name: "Zustand"
   },
   {
