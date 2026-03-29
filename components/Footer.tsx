@@ -49,7 +49,7 @@ const Footer = () => {
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 text-md mt-2">About</Link>
-            <Link href="#projects" className="text-gray-400 hover:text-blue-500/80 hover:ml-3 transition-all duration-200 
+            <Link hrefj="#projects" className="text-gray-400 hover:text-blue-500/80 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 text-md mt-2">Projects</Link>
@@ -81,7 +81,7 @@ hover:ml-3 transition-all duration-200 text-md mt-2">UI/UX Design</Link>
       </div>
       <div className="mt-10 border-t-1 border-gray-700 w-full flex flex-col items-center justify-center pt-8">
         <p className="sm text-gray-400 ">
-          &copy; {new Date().getFullYear()} GentlemanDev made with 💜
+          &copy; {new Date().getFullYear()} GentlemanDev made with 💙
         </p>
         <Link href="/">
           <motion.button
