@@ -33,7 +33,7 @@ const Footer = () => {
             className=" w-12 h-12 flex items-center justify-center bg-blue-500/10 hover:bg-blue-500/80 text-gray-300 hover:text-gray-100  transition-all duration-200 cursor-pointer rounded-full">
             <LuLinkedin size={20} className="" />
           </Link>
-          <Link href="https://x.com/gentlemandev"
+          <Link href="https://x.com/gentlemanwebdev"
             className=" w-12 h-12 flex items-center justify-center bg-blue-500/10 hover:bg-blue-500/80 text-gray-300 hover:text-gray-100  transition-all duration-200 cursor-pointer rounded-full">
             <FaXTwitter size={20} className="" />
           </Link>
@@ -49,7 +49,7 @@ const Footer = () => {
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 text-md mt-2">About</Link>
-            <Link hrefj="#projects" className="text-gray-400 hover:text-blue-500/80 hover:ml-3 transition-all duration-200 
+            <Link href="#projects" className="text-gray-400 hover:text-blue-500/80 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 
 hover:ml-3 transition-all duration-200 text-md mt-2">Projects</Link>
