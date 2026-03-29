@@ -82,13 +82,13 @@ export default function Contact() {
               <Link target="_blank" rel="noopener noreferrer" href="https://github.com/gentlehacks" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-black transition-all duration-200">
                 <LuGithub size={20} />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="https://github.com/salihu-adamu-9" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-500 transition-all duration-200">
+              <Link target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/salihu-adamu-3b9b97290" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-500 transition-all duration-200">
                 <LuLinkedin size={20} />
               </Link>
               <Link target="_blank" rel="noopener noreferrer" href="https://github.com/gentlemanwebdev" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-500 transition-all duration-200">
                 <LuTwitter size={20} />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="https://tiktok.com/gentlemandev" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-500 transition-all duration-200">
+              <Link target="_blank" rel="noopener noreferrer" href="https://tiktok.com/@gentlemandev" className="w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full bg-gray-700 hover:bg-blue-500 transition-all duration-200">
                 <FaTiktok size={20} />
               </Link>
             </div>
